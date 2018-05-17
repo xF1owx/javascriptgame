@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <title>Bomberman</title>
+</head>
+
+<body>
+    <main>
+        <div class="logo-left"></div>
+        <div id="map">
+            <div class="timer">
+                <span id="time">05:00</span>
+            </div>
+            <div id="gameover" class="blink">Game over!
+                <a class="replay" href="jeu.html">REJOUER</a>
+            </div>
+            <div id="gamewin" class="blink">WIN!
+                <a class="replay" href="jeu.html">REJOUER</a>
+            </div>
+            <div class="wall"></div>
+            <div class="floor"></div>
+            <div id="bomberman"></div>
+            <div id="bomb"></div>
+            <div id="monster"></div>
+
+            <div class="lifebar">
+                <img src="../medias/heart.png" alt="" class="heart0">
+                <img src="../medias/heart.png" alt="" class="heart1">
+                <img src="../medias/heart.png" alt="" class="heart2">
+            </div>
+        </div>
+        <div class="logo-right"></div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+body {
+    background-image: url('../medias/background.png');
+    background-color: #A2DAFB;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 1200px;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    animation: colorblink 0.08s infinite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#map {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: rgba(254, 254, 254, 0.3);
+    margin-top: 50px;
+}
+
+.logo-left {
+    background-image: url('../medias/bomberman-logo.png');
+    background-repeat: no-repeat;
+    width: 236px;
+    height: 236px;
+}
+
+.logo-right {
+    background-image: url('../medias/bomberman-logo-right.png');
+    background-repeat: no-repeat;
+    width: 236px;
+    height: 236px;
+}
+
+.wall {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.wall-destruct {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../medias/cloud.svg');
+    z-index: -10;
+}
+
+.explosion {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.floor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: -10;
+}
+
+#bomb {
+    position: absolute;
+    background-image: url('../medias/bomb.svg');
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+#bomberman {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../medias/bomberman.svg');
+    top: 50px;
+    left: 50px;
+    z-index: 400;
+}
+
+#monster {
+    position: absolute;
+    background-image: url('../medias/monster.svg');
+    width: 50px;
+    height: 50px;
+    top: 100px;
+    left: 100px;
+}
+
+.replay {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.timer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: red;
+    z-index: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#monster {
+    position: absolute;
+    background-image: url('../medias/monsterdown.svg');
+    width: 50px;
+    height: 50px;
+    top: 200px;
+    left: 500px;
+}
+
+.timer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: red;
+    z-index: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.panel {
+    justify-content: center;
+    width: 700px;
+    height: 500px;
+    background-image: url('../medias/panel.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.butt {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-decoration: none !important;
+    font-weight: bolder;
+    background-color: beige;
+    border: 5px solid;
+    border-color: pink;
+    margin: auto;
+}
+
+.tbut {
+    text-decoration: none;
+    align-self: center;
+    margin-top: 200px;
+}
+
+#gameover {
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: 100px;
+    top: 150px;
+    left: 250px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    z-index: 1000;
+}
+
+#gamewin {
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: 100px;
+    top: 150px;
+    left: 250px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    z-index: 1000;
+}
+
+.lifebar {
+    z-index: 10000;
+    position: absolute;
+    bottom: 6px;
+    left: 5px;
+}
+
+.blink {
+    color: red;
+    animation: colorblink 0.08s infinite;
+}
+
+@keyframes colorblink {
+    0% {}
+    25% {
+        color: green;
+    }
+    25% {
+        color: rgb(38, 0, 255);
+    }
+    10% {
+        color: rgb(255, 255, 255);
+    }
+    10% {
+        color: rgb(200, 170, 0)
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo-left,
+    .logo-right {
+        display: none;
+    }
+}
